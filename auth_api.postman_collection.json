@@ -1,0 +1,231 @@
+{
+	"info": {
+		"name": "auth_api",
+		"_postman_id": "c69190a1-15d5-5fa0-db00-709f0e68b149",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ahmed El-Lithy",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ahmed@mail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ahmed@mail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImUzYmE4NzI2MjI4MjE2M2IzZjY2YmJhNThkM2Q3ZDFhN2U3ZjNkYWFmZjZhMTU1NjBjNmMxZjM4ZjA1MTE1ZjZjNzFjYWFiMzE0NzQ4OTE4In0.eyJhdWQiOiIxIiwianRpIjoiZTNiYTg3MjYyMjgyMTYzYjNmNjZiYmE1OGQzZDdkMWE3ZTdmM2RhYWZmNmExNTU2MGM2YzFmMzhmMDUxMTVmNmM3MWNhYWIzMTQ3NDg5MTgiLCJpYXQiOjE1MTk1OTUxMTMsIm5iZiI6MTUxOTU5NTExMywiZXhwIjoxNTUxMTMxMTEzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.OigA6mPwc7JHDYXkfkCUG3dovSfwnN2lN5GpqY8MVgcJZndmXv_Z9FW11jNOFr39P3W1uRFZy-MXO3ptv69iXSDGULYq5oWY_gMdskf__oSceOkj29LT1BSvcGqw7viTBCxt6SDSu7z7veZRefStlFevjPE3Umj4_pxsZnUqWfyQI5x7NjE3cfl0UVceSRZAYsOyQzceAMeQKVjRlojSoeZyiH7oA4vMatA60P55aHDBvBjPlGK-iPorLKrAzSg7AF5XEDZD0Wy1DAebt7fk8PNmhfv5NphJQ87EJFZxg0dD1ZfPreFYyzMa7BsbmPmGGnLOteOBiHYSjpWeZ-3IF-kjmrYNrp-wdCoo6C2qHlQDl-MVKGhsvsuSXE-mJ0SG0PttoLYI5n7IRAIGnO0eaGn_0kMNMr0Xr4CZ9CcNrcIu--U81AT03CZMiMlz1gEIJZOxMRWYsh9vkD5cLCZkxozsG9xWePdTSVKzlTsl7ym5sWFzYd1oAmZsuhRgOw95QjfLIdgipVGLH0y3gnA1r06IMK9-CTefJBjvg1G9_Uxc42-5R7mHBOqCP4WDI_Dh-ZjlHdWhascEtN9kV01Bsg_FzXa7JY1-QVGt4e333fEZrMYJ1DrNwni9MIUOIyT6GqPgseownFOuCn57w4Ii1UQoUsxOHdjP6-fRvc7wWhk"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get Oauth token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "x4FkgfBReJkanqNnSNNO6BV2tZanrX29wH3UIk48",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ahmed@mail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "*",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/oauth/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
